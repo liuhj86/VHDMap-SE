@@ -28,14 +28,18 @@ Its main features are:
 <!-- <div align="center">
     <img src="./docs/crosswalk_detection.gif" alt="example">
 </div> -->
-<figure class="half" align="center">
+<div align="center">
     <img src="./docs/longitudinal-update.gif" alt="example" width=600 height=300>
-    <img src="./docs/Lane_update.gif" alt="example" width=600 height=300>
-</figure>
-<figure class="half" align="center">
-    <img src="./docs/GNSS_update.gif" alt="example" width=600 height=300>
-    <img src="./docs/Noised_GNSS_update.gif" alt="example" width=600 height=300>
-</figure>
+</div>
+<div align="center">
+    <img src="./docs/Lane_update.gif" alt="example" width=600 height=400>
+</div>
+<div align="center">
+    <img src="./docs/GNSS_update.gif" alt="example" width=600 height=400>
+</div>
+<div align="center">
+    <img src="./docs/Noised_GNSS_update.gif" alt="example" width=600 height=400>
+</div>
 
 ## Prerequisites
 ### ROS
