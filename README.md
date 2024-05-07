@@ -1,10 +1,5 @@
-<!-- <div align="center">
-    <img src="docs/mono_lam.png" alt="MonoLaM">
-</div> -->
 <div align="center">
 <a href="https://ieeexplore.ieee.org/document/10497895"><img src="https://img.shields.io/badge/paper_link-IEEE_Xplore-004088.svg"/></a>
-<a href="https://www.youtube.com/watch?v=9aHNV3TQ6xw">
-<!-- <img alt="Youtube" src="https://img.shields.io/badge/Video-Youtube-red"/> -->
 </a>
 <a ><img alt="PRs-Welcome" src="https://img.shields.io/badge/PRs-Welcome-red" /></a>
 <a href="https://github.com/liuhj86/VHDMap-SE/stargazers">
@@ -34,12 +29,12 @@ Its main features are:
     <img src="./docs/crosswalk_detection.gif" alt="example">
 </div> -->
 <figure class="half" align="center">
-    <img src="./docs/longitudinal-update.gif" alt="example" width=350 height=250>
-    <img src="./docs/Lane_update.gif" alt="example" width=350 height=250>
+    <img src="./docs/longitudinal-update.gif" alt="example" width=320 height=220>
+    <img src="./docs/Lane_update.gif" alt="example" width=320 height=220>
 </figure>
 <figure class="half" align="center">
-    <img src="./docs/GNSS_update.gif" alt="example" width=350 height=250>
-    <img src="./docs/Noised_GNSS_update.gif" alt="example" width=350 height=250>
+    <img src="./docs/GNSS_update.gif" alt="example" width=320 height=220>
+    <img src="./docs/Noised_GNSS_update.gif" alt="example" width=320 height=220>
 </figure>
 
 ## Prerequisites
