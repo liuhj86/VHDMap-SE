@@ -29,12 +29,12 @@ Its main features are:
     <img src="./docs/crosswalk_detection.gif" alt="example">
 </div> -->
 <figure class="half" align="center">
-    <img src="./docs/longitudinal-update.gif" alt="example" width=320 height=220>
-    <img src="./docs/Lane_update.gif" alt="example" width=320 height=220>
+    <img src="./docs/longitudinal-update.gif" alt="example" width=600 height=300>
+    <img src="./docs/Lane_update.gif" alt="example" width=600 height=300>
 </figure>
 <figure class="half" align="center">
-    <img src="./docs/GNSS_update.gif" alt="example" width=320 height=220>
-    <img src="./docs/Noised_GNSS_update.gif" alt="example" width=320 height=220>
+    <img src="./docs/GNSS_update.gif" alt="example" width=600 height=300>
+    <img src="./docs/Noised_GNSS_update.gif" alt="example" width=600 height=300>
 </figure>
 
 ## Prerequisites
