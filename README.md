@@ -28,7 +28,7 @@ Its main features are:
 <!-- <div align="center">
     <img src="./docs/crosswalk_detection.gif" alt="example">
 </div> -->
-<div align="center">
+<!-- <div align="center">
     <img src="./docs/longitudinal-update.gif" alt="example" width=600 height=300>
 </div>
 <div align="center">
@@ -39,7 +39,9 @@ Its main features are:
 </div>
 <div align="center">
     <img src="./docs/Noised_GNSS_update.gif" alt="example" width=600 height=400>
-</div>
+</div> -->
+## Supplementory Materials
+Please visit https://liuhongji.site/VHDMap-SE/.
 
 ## Prerequisites
 ### ROS
