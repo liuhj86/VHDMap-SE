@@ -1,0 +1,15 @@
+<launch>
+    
+    <!--- Sim Time -->
+    <param name="/use_sim_time" value="false" />
+    
+    <!--- Config Path -->
+    <arg name="config_path" default = "$(find VHDMap-SE)/conf/config.yaml" />
+    
+    <!--- Sins-Filter -->    
+    <node pkg="VHDMap-SE" type="navigation_node" name="navigation_node" output="screen">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+    </node>
+
+
+</launch>

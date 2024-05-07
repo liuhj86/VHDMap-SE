@@ -1,0 +1,98 @@
+%YAML:1.0
+# =========================================================================
+# PUBLISHED TOPIC NAME
+
+yaw_topic: "/VHDMap_SE/yaw"
+position_topic: "/VHDMap_SE/pos"
+
+# car parameter
+vehicle_length: 2.20249676704
+vehicle_width: 1.37520122528
+
+# map parameter
+# road_width: 3.5
+road_width: 3.325
+
+# system setting
+run_mode: 2  # 0: Simulation 1: real-world 2: real-world with offset
+stationary_threshold: 0.2 
+angular_vel_threshold_for_straight_motion: 0.04 # unit:rad When the z-axis angular velocity is less than this value, it is considered a straight line motion.
+duration_threshold_for_straight_motion: 40   # > imu_freq / gnss_freq
+# initial_latitude: 42    
+# initial_longitude: -2   
+initial_latitude: 0    
+initial_longitude: 111   
+GNSS_data_fluctuation_resistance: 0 
+GNSS_update: 0 
+GNSS_pos_cali: 1 
+GNSS_yaw_cali: 1
+lane_update: 0 
+lane_pos_cali: 1 
+lane_yaw_cali: 1 
+longitudinal_update: 1 
+imu_noise: 1   # Whether to add IMU noise to the system
+imu_noise_mode: 1 # 0：Random within the bound 1：Add fixed value of bound
+imu_noise_bound: 0.01 # The unit is degrees, each time the IMU angular velocity value given to the system fluctuates within the range of true data plus or minus this value. The reference low-cost single axis gyroscope has an error of no more than 0.05 degrees per meter.
+GNSS_noise: 0 
+GNSS_noise_bound: 1 # unit is m
+lat_meas_noise: 0
+lat_meas_noise_mode: 1 # 0:Percentage upper limit mode  1：Gaussian noise mode
+lat_meas_noise_level: 100 # % （be meaningful when above mode is 0）
+lat_meas_noise_mean: 0.1 # m (be meaningful when above mode is 1)
+lat_meas_noise_std: 0.1 # Gaussian noise variance
+lon_meas_noise: 0 
+lon_meas_noise_mode: 1 # 0:Percentage upper limit mode  1：Gaussian noise mode
+lon_meas_noise_level: 100 # % 
+lon_meas_noise_mean: 0.1 # m
+lon_meas_noise_std: 0.1 # Gaussian noise variance
+
+# GNSS topic setting
+gnss_topic: "/carla/ego_vehicle/gnss"
+gnss_topic_frequency: 1
+
+
+# Imu setting
+imu_topic: "/carla/ego_vehicle/imu"
+imu_topic_frequency: 20
+
+# Encoder setting
+encoder_topic: "/carla/ego_vehicle/odometry"
+initial_encoder_scale: 1.0      
+encoder_topic_frequency: 20
+
+# Camera setting
+camera_lane_topic: "/camera/lane"
+camera_sign_topic: "/camera/sign"
+
+# Map setting
+map_response_lane_topic: "/map/response/lane"
+map_response_lc_topic: "/map/response/lc"
+map_response_sign_topic: "/map/response/sign"
+map_request_lane_topic: "/map/request/lane"
+map_request_lc_topic: "/map/request/lc"
+map_request_sign_topic: "/map/request/sign"
+
+# longitudinal constraint setting 
+lc_measurement_topic: "/longitudinal_constraint_measurement"
+
+#ESKF setting
+error_velocity_variance_x: 0.025     #0.025
+error_velocity_variance_y: 0.025     #0.025
+error_velocity_variance_z: 10     #0
+
+initial_position_variance_parameter_lat: 5           #5
+initial_position_variance_parameter_lon: 5           #5
+initial_position_variance_parameter_alt: 5          #10
+
+gnss_variance_parameter_lat: 3      #3
+gnss_variance_parameter_lon: 3      #3
+gnss_variance_parameter_alt: 1      #5
+
+gnss_variance_parameter_yaw: 0.3  #0.3
+
+initial_attitude_variance_parameter_yaw: 0.003  #10
+
+pebg_standard_deviation_coefficient: 100.0
+pwebg_standard_deviation_coefficient: 0  # 10.0
+
+
