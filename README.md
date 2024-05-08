@@ -41,7 +41,7 @@ Its main features are:
     <img src="./docs/Noised_GNSS_update.gif" alt="example" width=600 height=400>
 </div> -->
 ## Supplementory Materials
-Please visit https://liuhongji.site/VHDMap-SE/.
+For more demo videos of VHDMap-SE, please visit https://liuhongji.site/VHDMap-SE/.
 
 ## Prerequisites
 ### ROS
