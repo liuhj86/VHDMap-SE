@@ -116,6 +116,17 @@ python examples/demo_curve_fitting.py
 source devel/setup.bash
 roslaunch VHDMap-SE estimator.launch
 ```
+## System Initialization
+Before the system can run successfully, it is necessary to obtain the orientation of the vehicle relative to the due north direction.If users' GNSS receiver has a double antenna, the heading angle
+relative to the due north direction can be obtained directly.
+If not, Mercator projection (MP) could be used to calculate
+it from two consecutive frames of GNSS data. To guarantee
+accuracy, we need to make sure that both frames of GNSS
+data used are obtained while the UGV is moving in a straight
+line. The reading of the angular velocity meter during UGV
+motion can be a good reference. 
+
+Therefore, please ensure that your vehicle drives in a straight line until the system initialization is successful before the system runs successfully (in principle, only 2 frames of consecutive GNSS data with good signal need to be received during the straight line movement process, so the duration of this process in general environments will not be too long). When the system initialization is successful, there will be corresponding output prompts.
 ## Observation Protocols
 | Item   |  Topic | Data Flow| Message Type  | Description                                                      |
 | ----- | -----| -----|-----|------------------------------------------------------------ |
